@@ -1,97 +1,133 @@
-# MatrixMultiplication
+# Matrix Multiplication Algorithms
 
-This program implements and compares to Matrix Multiplication Algorithms:
-- Naive Matrix Multiplication
-- Strassen Matrix Multiplication
+This project implements and compares two matrix multiplication algorithms in Java:
 
-The program additionally reads matrices from input files and writes to an output file the multiplication product, runtime, and number of multiplications performed for each algorithm.
- 
-___
-## Features
+- **Naive Matrix Multiplication**
+- **Strassen Matrix Multiplication**
 
-Naive Matrix Multiplication Algorithm
-Strassen Matrix Multiplication Algorithm
-Handling of File Input/Output
-Output Matrix Product and Performance Metrics
+The program reads matrices from input files and writes to an output file:  
+- The multiplication product  
+- Runtime performance  
+- Number of multiplications performed by each algorithm  
 
-___
-## Requirements
+---
 
-Java Version: Version 8 or higher.
-	-Used 23.0.2
-IDE: Any Java-compatible IDE
-	-Used Eclipse IDE for Java Developers
+## ✨ Features
 
-___
-## How to Run
+- Naive matrix multiplication algorithm  
+- Strassen matrix multiplication algorithm  
+- File input/output handling  
+- Output of matrix product and performance metrics  
 
-1. The following java files are in the src directory:
--Main.java
--FileHandler.java
--MatrixMultiplication.java
--StrassenMatrixMultiplication.java
+---
 
+## ⚙️ Requirements
 
-**Compile the Program**: 
-bash
+- **Java**: Version 8 or higher (tested on 23.0.2)  
+- **IDE**: Any Java-compatible IDE (tested on Eclipse IDE for Java Developers)  
+
+---
+
+## 🚀 How to Run
+
+### 1. Compile the program
+
+Navigate to the `src` directory and compile all `.java` files into the `class` directory:
+
+```bash
 cd src
 javac -d ../class *.java
 
+### 2. Run the program
 
-2. The following class files are in the class directory:
--Main.class
--fileHandler.class
--MatrixMultiplication.class
--StrassenMatrixMultiplication.class
+Execute the program from the class directory with the following syntax:
 
-**Run the Program**:
+```bash
 java -cp class Main <inputFile.txt> <outputFile.txt>
 
-____
-## Input Files
+## 📂 Repository Structure
+```bash
+.
+├── src/
+│   ├── Main.java
+│   ├── FileHandler.java
+│   ├── MatrixMultiplication.java
+│   └── StrassenMatrixMultiplication.java
+│
+├── class/
+│   ├── Main.class
+│   ├── FileHandler.class
+│   ├── MatrixMultiplication.class
+│   └── StrassenMatrixMultiplication.class
+│
+├── input/
+│   ├── LabStrassenInput.txt
+│   ├── LabSupplementalInput.txt
+│   ├── LabErrorInput.txt
+│   ├── LabErrorInput1.txt
+│   ├── LabErrorInput2.txt
+│   └── LabErrorInput3.txt
+│
+├── output/
+│   ├── LabStrassenOutput.txt
+│   └── LabSupplementalOutput.txt
+│
+└── README.md```
 
-The following input files are in the directory:
+## 📝 Input Files
 
-**Correct Format
--LabStrassenInput.txt
--LabSupplementalInput.txt
+Correct Format:
 
-**Error Format
--LabErrorInput.txt
--LabErrorInput1.txt
--LabErrorInput2.txt
--LabErrorInput3.txt
+LabStrassenInput.txt
 
-____
-## Input Format
+LabSupplementalInput.txt
 
-The input file requires:
-1. The matrix is square.
-2. The matrix size is a power of 2.
-3. The next line after Matrix A contains Matrix B.
+Error Format:
 
-Example:
+LabErrorInput.txt
+
+LabErrorInput1.txt
+
+LabErrorInput2.txt
+
+LabErrorInput3.txt
+
+## 📑 Input Format
+
+The matrix must be square.
+
+The matrix size must be a power of 2.
+
+Matrix B must immediately follow Matrix A.
+
+Example input file:
+
 2
 4 8
 9 2
 4 3
 8 6
 
-____
-## Output Files
+## 📤 Output Files
 
--LabStrassenOutput
--LabSupplementalOutput
-____
-## Output Format
+LabStrassenOutput.txt
 
-This program creates an output file with:
-- The size of the input matrices.
-- The runtime to perform the given algorithm.
-- The number of comparisons made during the multiplication algorithm.
-- The resulting product matrix.
+LabSupplementalOutput.txt
 
-Example:
+## 📊 Output Format
+
+Each output file contains:
+
+Size of the input matrices
+
+Runtime to perform each algorithm
+
+Number of multiplications performed
+
+Resulting product matrix
+
+Example output:
+
 --Matrix Size: 2 x 2--
 
 Naive Matrix Multiplication:
@@ -100,6 +136,7 @@ Comparisons: 8
 Result:
 16 17 
 26 22 
+
 Strassen Matrix Multiplication:
 Time: 18600ns
 Comparisons: 7
