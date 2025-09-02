@@ -43,7 +43,8 @@ javac -d ../class *.java
 Execute the program from the class directory with the following syntax:
 
 ```bash
-java -cp class Main <inputFile.txt> <outputFile.txt>```
+java -cp class Main <inputFile.txt> <outputFile.txt>
+```
 
 ## 📂 Repository Structure
 ```bash
@@ -72,7 +73,8 @@ java -cp class Main <inputFile.txt> <outputFile.txt>```
 │   ├── LabStrassenOutput.txt
 │   └── LabSupplementalOutput.txt
 │
-└── README.md```
+└── README.md
+```
 
 ## 📝 Input Files
 
