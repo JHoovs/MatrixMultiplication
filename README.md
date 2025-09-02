@@ -37,6 +37,7 @@ Navigate to the `src` directory and compile all `.java` files into the `class` d
 ```bash
 cd src
 javac -d ../class *.java
+```
 
 ### 2. Run the program
 
