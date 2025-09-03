@@ -79,58 +79,46 @@ java -cp class Main <inputFile.txt> <outputFile.txt>
 
 ## 📝 Input Files
 
-Correct Format:
+**Correct Format:**
+-LabStrassenInput.txt
+-LabSupplementalInput.txt
 
-LabStrassenInput.txt
-
-LabSupplementalInput.txt
-
-Error Format:
-
-LabErrorInput.txt
-
-LabErrorInput1.txt
-
-LabErrorInput2.txt
-
-LabErrorInput3.txt
+**Error Format:**
+-LabErrorInput.txt
+-LabErrorInput1.txt
+-LabErrorInput2.txt
+-LabErrorInput3.txt
 
 ## 📑 Input Format
 
-The matrix must be square.
+-The matrix must be square.
+-The matrix size must be a power of 2.
+-Matrix B must immediately follow Matrix A.
 
-The matrix size must be a power of 2.
-
-Matrix B must immediately follow Matrix A.
-
-Example input file:
-
+**Example input file:**
+```yaml
 2
 4 8
 9 2
 4 3
 8 6
+```
 
 ## 📤 Output Files
 
-LabStrassenOutput.txt
-
-LabSupplementalOutput.txt
+-LabStrassenOutput.txt
+-LabSupplementalOutput.txt
 
 ## 📊 Output Format
 
 Each output file contains:
+-Size of the input matrices
+-Runtime to perform each algorithm
+-Number of multiplications performed
+-Resulting product matrix
 
-Size of the input matrices
-
-Runtime to perform each algorithm
-
-Number of multiplications performed
-
-Resulting product matrix
-
-Example output:
-
+**Example output:**
+```yaml
 --Matrix Size: 2 x 2--
 
 Naive Matrix Multiplication:
@@ -146,3 +134,4 @@ Comparisons: 7
 Result:
 16 17 
 26 22
+```
